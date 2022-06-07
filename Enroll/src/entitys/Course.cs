@@ -17,23 +17,15 @@ namespace Enroll.src.entitys
 
 
         public string courseFile = @"../../../data_file/course.csv";
-        TextWriter file = null;
+    
 
 
   
 
-        public void InsertData() {
-
-            StreamWriter saveData =  File.AppendText(courseFile);
-
-            String data = Code + "," + Name + "," + Area;
-
-            saveData.WriteLine(data.ToString());
-            saveData.Close();
+        public string toString() => Code + "," + Name + "," + Area;
 
         
-        }
-
+       
 
     }
 

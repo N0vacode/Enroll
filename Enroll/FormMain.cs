@@ -110,11 +110,6 @@ namespace Enroll
             btnCourses.BackColor = Color.FromArgb(246, 135, 31);
         }
 
-        private void btnTeacher_Click(object sender, EventArgs e)
-        {
-            OpenForm<FormTeacher>();
-            btnTeacher.BackColor = Color.FromArgb(246, 135, 31);
-        }
 
         private void btnStudent_Click(object sender, EventArgs e)
         {
@@ -253,12 +248,7 @@ namespace Enroll
 
         private void CloseFormsColors(Object sender, FormClosedEventArgs e) {
 
-            if (Application.OpenForms["FormTeacher"] == null)
-            {
-                btnTeacher.BackColor = Color.FromArgb(2,28,42);
-           
-            }
-
+ 
             if (Application.OpenForms["FormCourse"] == null) {
                 btnCourses.BackColor = Color.FromArgb(2, 28, 42);
   

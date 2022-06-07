@@ -9,26 +9,15 @@ namespace Enroll.src.entitys
     public class User
     {
 
-        string FirtsName { get; set; }
-        string Surname { get; set; }
-        string Address { get; set; }
-        string Mail { get; set; }
-        string Gender { get; set; }
-        int PhoneNumber { get; set; }
-        string PathDataBase { get; set; }
+        public string FirtsName { get; set; }
+        public string Surname { get; set; }
+        public string Address { get; set; }
+        public string Mail { get; set; }
+        public string Gender { get; set; }
+        public int PhoneNumber { get; set; }
+        public string PathDataBase { get; set; }
+        public string courseFile = @"../../../data_file/student.csv";
         public User() { }
-
-
-        public void InsertData(String data)
-        {
-
-            StreamWriter saveData = File.AppendText(PathDataBase);
-
-            saveData.WriteLine(data);
-            saveData.Close();
-
-
-        }
 
 
 

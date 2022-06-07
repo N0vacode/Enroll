@@ -43,8 +43,6 @@
             this.btnEnrolled = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnStudent = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTeacher = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCourses = new System.Windows.Forms.Button();
             this.panelTopBar = new System.Windows.Forms.Panel();
@@ -75,7 +73,7 @@
             this.panelDashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(650, 450);
+            this.panelDashBoard.Size = new System.Drawing.Size(750, 450);
             this.panelDashBoard.TabIndex = 0;
             this.panelDashBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashBoard_Paint);
             // 
@@ -87,7 +85,7 @@
             this.panelForms.Location = new System.Drawing.Point(160, 30);
             this.panelForms.MinimumSize = new System.Drawing.Size(400, 300);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(490, 420);
+            this.panelForms.Size = new System.Drawing.Size(590, 420);
             this.panelForms.TabIndex = 2;
             // 
             // panel3
@@ -98,7 +96,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.MinimumSize = new System.Drawing.Size(400, 300);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(490, 420);
+            this.panel3.Size = new System.Drawing.Size(590, 420);
             this.panel3.TabIndex = 5;
             // 
             // panel5
@@ -109,7 +107,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.MinimumSize = new System.Drawing.Size(400, 300);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(490, 420);
+            this.panel5.Size = new System.Drawing.Size(590, 420);
             this.panel5.TabIndex = 5;
             // 
             // panel7
@@ -120,14 +118,14 @@
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.MinimumSize = new System.Drawing.Size(400, 300);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(490, 420);
+            this.panel7.Size = new System.Drawing.Size(590, 420);
             this.panel7.TabIndex = 5;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(118, 78);
+            this.pictureBox2.Location = new System.Drawing.Point(147, 94);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(248, 222);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,8 +141,6 @@
             this.panelMenu.Controls.Add(this.btnEnrolled);
             this.panelMenu.Controls.Add(this.panel4);
             this.panelMenu.Controls.Add(this.btnStudent);
-            this.panelMenu.Controls.Add(this.panel2);
-            this.panelMenu.Controls.Add(this.btnTeacher);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Controls.Add(this.btnCourses);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -180,7 +176,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(135)))), ((int)(((byte)(31)))));
-            this.panel6.Location = new System.Drawing.Point(0, 237);
+            this.panel6.Location = new System.Drawing.Point(0, 189);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 30);
             this.panel6.TabIndex = 3;
@@ -195,7 +191,7 @@
             this.btnEnrolled.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEnrolled.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrolled.Image")));
             this.btnEnrolled.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnrolled.Location = new System.Drawing.Point(3, 237);
+            this.btnEnrolled.Location = new System.Drawing.Point(3, 189);
             this.btnEnrolled.Name = "btnEnrolled";
             this.btnEnrolled.Size = new System.Drawing.Size(160, 30);
             this.btnEnrolled.TabIndex = 4;
@@ -207,7 +203,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(135)))), ((int)(((byte)(31)))));
-            this.panel4.Location = new System.Drawing.Point(0, 188);
+            this.panel4.Location = new System.Drawing.Point(0, 140);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 30);
             this.panel4.TabIndex = 3;
@@ -222,7 +218,7 @@
             this.btnStudent.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnStudent.Image")));
             this.btnStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudent.Location = new System.Drawing.Point(3, 188);
+            this.btnStudent.Location = new System.Drawing.Point(3, 140);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(160, 30);
             this.btnStudent.TabIndex = 4;
@@ -231,33 +227,6 @@
             this.btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStudent.UseVisualStyleBackColor = true;
             this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(135)))), ((int)(((byte)(31)))));
-            this.panel2.Location = new System.Drawing.Point(0, 140);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 30);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // btnTeacher
-            // 
-            this.btnTeacher.FlatAppearance.BorderSize = 0;
-            this.btnTeacher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(135)))), ((int)(((byte)(31)))));
-            this.btnTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeacher.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTeacher.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnTeacher.Image = ((System.Drawing.Image)(resources.GetObject("btnTeacher.Image")));
-            this.btnTeacher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTeacher.Location = new System.Drawing.Point(3, 140);
-            this.btnTeacher.Name = "btnTeacher";
-            this.btnTeacher.Size = new System.Drawing.Size(160, 30);
-            this.btnTeacher.TabIndex = 4;
-            this.btnTeacher.Text = "     Teachers";
-            this.btnTeacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTeacher.UseVisualStyleBackColor = true;
-            this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
             // 
             // panel1
             // 
@@ -296,7 +265,7 @@
             this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopBar.Location = new System.Drawing.Point(0, 0);
             this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(650, 30);
+            this.panelTopBar.Size = new System.Drawing.Size(750, 30);
             this.panelTopBar.TabIndex = 0;
             this.panelTopBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panelTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTopBar_MouseMove);
@@ -309,7 +278,7 @@
             this.btnRestore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestore.Image = ((System.Drawing.Image)(resources.GetObject("btnRestore.Image")));
-            this.btnRestore.Location = new System.Drawing.Point(587, 4);
+            this.btnRestore.Location = new System.Drawing.Point(687, 4);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(20, 20);
             this.btnRestore.TabIndex = 1;
@@ -325,7 +294,7 @@
             this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(548, 4);
+            this.btnMinimize.Location = new System.Drawing.Point(648, 4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 20);
             this.btnMinimize.TabIndex = 0;
@@ -340,7 +309,7 @@
             this.btnMaximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
-            this.btnMaximize.Location = new System.Drawing.Point(587, 4);
+            this.btnMaximize.Location = new System.Drawing.Point(687, 4);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(20, 20);
             this.btnMaximize.TabIndex = 0;
@@ -355,7 +324,7 @@
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(627, 4);
+            this.btnClose.Location = new System.Drawing.Point(727, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 20);
             this.btnClose.TabIndex = 0;
@@ -374,7 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 450);
+            this.ClientSize = new System.Drawing.Size(750, 450);
             this.Controls.Add(this.panelDashBoard);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(450, 300);
@@ -414,8 +383,6 @@
         private Button btnEnrolled;
         private Panel panel4;
         private Button btnStudent;
-        private Panel panel2;
-        private Button btnTeacher;
         private PictureBox pictureBox1;
         private PictureBox iconMain;
         private PictureBox pictureBox2;

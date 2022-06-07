@@ -10,6 +10,11 @@ namespace Enroll.src.entitys
     
     internal class Student: User
     {
-        string Id { get; set; }
+        public string Id { get; set; }
+        public string studentFile = @"../../../data_file/student.csv";
+        public Student() { }
+
+        public string toString()
+            => Id + "," + FirtsName + "," + Surname + "," + Address + "," + Mail + "," + Gender + "," + PhoneNumber;
     }
 }

@@ -37,11 +37,11 @@
             this.txtCourseName = new System.Windows.Forms.TextBox();
             this.txtCourseCode = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridCourses = new System.Windows.Forms.DataGridView();
             this.txtCourseArea = new System.Windows.Forms.TextBox();
             this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridCourses)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,16 +108,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dataGridCourses
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(69, 134);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(342, 265);
-            this.dataGridView1.TabIndex = 13;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridCourses.AllowUserToOrderColumns = true;
+            this.dataGridCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridCourses.Location = new System.Drawing.Point(69, 134);
+            this.dataGridCourses.Name = "dataGridCourses";
+            this.dataGridCourses.RowTemplate.Height = 25;
+            this.dataGridCourses.Size = new System.Drawing.Size(342, 265);
+            this.dataGridCourses.TabIndex = 13;
+            this.dataGridCourses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtCourseArea
             // 
@@ -136,7 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 411);
             this.Controls.Add(this.txtCourseArea);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridCourses);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCourseCode);
             this.Controls.Add(this.txtCourseName);
@@ -149,7 +149,7 @@
             this.Text = "FormCourse";
             this.Load += new System.EventHandler(this.FormCourse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridCourses)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,7 +164,7 @@
         private TextBox txtCourseName;
         private TextBox txtCourseCode;
         private Button button1;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridCourses;
         private TextBox txtCourseArea;
         private BindingSource courseBindingSource;
     }
